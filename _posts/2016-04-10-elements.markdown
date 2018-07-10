@@ -1,9 +1,8 @@
 ---
-layout: post
+layout: blue
 title:  "Elements"
 description: Sed laoreet purus vitae diam rutrum porttitor. Sed ipsum lectus, finibus at venenatis congue, condimentum vel lorem. Maecenas ac sodales tellus. Proin placerat aliquam feugiat.
 categories: jekyll update
-img: image-8.jpg
 color: FF6F00
 author: webjeda
 ---
@@ -57,4 +56,3 @@ author: webjeda
 | col 3 is | right-aligned |    $1 |
 {: .table .table-striped .table-hover}
 {% endhighlight %}
-

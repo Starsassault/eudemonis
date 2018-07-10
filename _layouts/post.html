@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-
+<!-- This is the original post page. The thing I did with the new post html (now called page.html) is removing the header
+ -->
 <div class="page-container">
    {% if page.img %}
     <img class="featured-img" src={{ "/images-hq/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">

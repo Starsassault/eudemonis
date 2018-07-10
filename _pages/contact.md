@@ -1,9 +1,15 @@
 ---
 title: Contact
-layout: post
+layout: page
 permalink: /contact/
 ---
+Some rights reserved.
 
+/*The team at*/ Eudemonis doesn't believe in copyright. So you're free to copy, quote and draw your own conclusions from any of the information stated on this website. __Except__ interviews, personal experiences and any of the comments made by visitors.
+
+The team would love to see your own work and/or opinion on different subjects. So whenever you quote, comment or work with our content in any other way please send us a link if you feel like sharing.
+
+With much love, Eudemonis.
 
 <style>
 .contact-li {
@@ -52,7 +58,7 @@ ul.contact-ul {
 
 </style>
 
-You can send me your feedback or suggestion here. If there is something missing in the theme then you can ask me to add. 
+You can send me your feedback or suggestion here. If there is something missing in the theme then you can ask me to add.
 
 Also, if you are willing to add it yourself then feel free to open a pull request after making changes.
 
@@ -70,11 +76,11 @@ Also, if you are willing to add it yourself then feel free to open a pull reques
                 <label class="contact-label" for="message">Message:</label>
                 <textarea class="contact-textarea" placeholder="Your message" class="contact-input" rows="4" id="message" name="message" tabindex="3"></textarea>
             </li>
-            
+
         </ul>
         <input type="submit" value="Send" id="submit"/>
         <input type="hidden" name='redirect_to' value="http://blog.webjeda.com/thank-you/" />
-        
+
 </form>
 
 This form is setup using [SimpleForm](https://getsimpleform.com){: target="_blank" rel="nofollow"}. You can get your own API token and update it in the **_config.yml** file.

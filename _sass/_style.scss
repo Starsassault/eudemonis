@@ -13,7 +13,7 @@
     column-count: 4;
     column-gap: 2%;
     column-width: 25%;
-    
+
     @include media-query($on-laptop){
     -moz-column-count: 3;
     -moz-column-gap: 3%;
@@ -23,7 +23,7 @@
     -webkit-column-width: 30%;
     column-count: 3;
     column-gap: 3%;
-    column-width: 30%;        
+    column-width: 30%;
     }
     @include media-query($on-palm) {
     -moz-column-count: 1;
@@ -61,7 +61,7 @@
     @include media-query($on-laptop){
         content: '3 .column.size-1of3';
     }
-    
+
        @include media-query($on-palm){
         content: '1 .column.size-1of1';
     }
@@ -83,68 +83,76 @@
 
 
 /* These are the classes that are going to be applied: */
-.column { 
+.column {
     float: left;
-    
+
 }
-.size-1of4 { 
+.size-1of4 {
      width: 25%;
 
 }
 
 .box {
-    margin: 0 10px 15px 0;
+    margin: 10px 10px 10px 10px; /* First (top) and Last (left marging =10px) is space between cards*/
     display: inline-block;
 /*     width: 100%; */
-    border-radius: 4px;
-    box-shadow: 2px 2px 4px #aaa;
-    -webkit-box-shadow: 2px 2px 4px #aaa; 
-    -moz-box-shadow: 2px 2px 4px #aaa; 
-    color: rgba(255, 255, 255, 0.72);
+    border-radius: 0px; /* rounded corners cards */
+    box-shadow: 0px 0px 3px 0px #aaa; /* shadow card last pixes is the size, second last is the amount of blur */
+    -webkit-box-shadow: 0px 0px 3px 0px #aaa;
+    -moz-box-shadow: 0px 0px 3px 0px #aaa;
+    color: #303030; /* color text on card */
     &:hover {
-          box-shadow: 3px 3px 6px #aaa;
-          -webkit-box-shadow: 3px 3px 6px #aaa;
-          -webkit-box-shadow: 3px 3px 6px #aaa;
+          box-shadow: 8px 8px 8px 2px #c0c0c0; /* This color and the other two are the highlights around the boxes when hovering over (on homepage) */
+          -webkit-box-shadow: 8px 8px 8px 2px #c0c0c0;
+          -webkit-box-shadow: 8px 8px 8px 2px #c0c0c0;
     }
 }
 
 
 
 .feat-image {
-   border-radius: 4px 4px 0 0; 
+   border-radius: 4px 4px 0 0;
    width: 100%;
 
-}    
+}
 
 
 .container {
-         padding: 15px;     
-
+         padding: 15px; /* influences length of card */
+         border: 1px solid #aaa; /* card border */
      }
-     
+
 .container a {
-    color: #eee;
+    color: #eee; /* Doesn't do anything */
     text-decoration: none;
+
 }
      .grid-item img {
          width: 100%;
-         border-radius: 4px 4px 0 0;
+         border-radius: 5px 5px 0 0;
          border:none;
      }
      .action{
          margin-top: 15px;
          padding-top: 15px;
-         border-top: 1px solid #ddd;
-       
+         border-top: 1px solid #aaa; /* color dividing line card */
+         font-family: 'Helvetica neue'; /*font date on card*/
+         font-size: 12px;
+         text-align: left;
+         font-weight: 300;
+         font-style: none;
+
      }
      .action .fa{
+        margin-top: 6px;
          float: right;
-         opacity: 0.9;
-         color: #eee;
+         opacity: 1;
+         color: #aeaeae; /* color arrow of card main page */
          &:hover{
              opacity: 0.8;
+             color: $highlight-color;
          }
-         
+
      }
 
 .social {
@@ -164,11 +172,14 @@
     }
 }
 
-
 .page-container {
     margin: 0 auto;
-    box-shadow: 0 0 1px #aaa;
-    max-width: 800px;
+    color: red;
+    margin-top: 60px; /* is now aligned with cards margin*/
+    background-color: #fff; /*color border post/article/text area*/
+    border-radius: 0px; /* rounded corners of post */
+    box-shadow: 0px 5px 10px 3px #aaa; /* set content shadow of post*/
+    max-width: 800px; /* set content width of post og=900*/
 
 }
 .page-container img {
@@ -176,9 +187,24 @@
 }
 
 article {
-    border-bottom: 1px solid #ddd;
-    color: $text-color;
-    padding: 1em 0;
+    border-bottom: 1px solid #ddd ; /*color dividing line underneath post*/
+    background-color: #fff; /*color background text area/post*/
+    color: $text-color; /*only article text color*/
+    font-size: 14px; /*size of article text*/
+    letter-spacing: 0.0385em; /*post body*/
+    padding: 0.3em 3.5em; /*padding text on article*/
+    margin-bottom: 1em;
+}
+
+.firstcharacter {
+  color: $text-color;
+  float: left;
+  font-family: $base-font-family;
+  font-size: 50px;
+  line-height: 100%;
+  padding-top: 00px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .social-full h4, .social-full fa  {
@@ -201,11 +227,14 @@ article {
 }
 
 footer {
-    clear: both;
+    clear: both; /*change the looks of the footer text here!*/
     display: block;
     text-align: center;
+    font-family: $head-font-family;
+    font-size: 13px;
+    font-weight: 400;
     color: $text-color;
-    padding: 50px;
+    padding:60px;
 }
 
 
@@ -214,41 +243,59 @@ header {
     min-height: 60px;
     text-align: center;
     margin: 2em 0;
+    background-color: #fff; /*header background color*/
+
 }
 
 .header-title {
-    color: #555;
-    font-size: 3em;
+    color: #303030; /*site title color*/
+    &:hover {
+        color: #444;
+        opacity: 1;
+    }
+    font-size: 6em;
+    font-style: bold;
     line-height: 0;
-    margin: 0;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
     display: inline-block;
-    letter-spacing: -1px;
-    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: 'didot'; /*site title font*/
+    font-weight: 100; /*original = 500*/
     text-shadow: 0 0 1px;
 }
 
 
 .header-tagline {
-    font-weight: 300;
+    font-weight: 280;
+    letter-spacing: 0.15em;
+    font-size: 16px;
     line-height: 1;
-    color: #ea6111;
+    margin-top: 0.9em;
+    margin-bottom: 0.7em;
+    color: #303030; /*tagline header color*/
+    &:hover {
+        color: #4A4582;
+        opacity: 1;
+    }
     text-shadow: 0 0 1px;
-    
+
 }
 
 // Disqus comments button
 
 .show-comments {
     background: transparent;
-    border: 1px dashed $brand-color;
+    border: none;
     cursor: pointer;
     text-align: center;
     color: $text-color;
-    font-size: 1.2em;
+    font-size: 0.9em;
     padding: 4px;
     margin-top: 1em;
     &:hover{
-       border: 1px dashed $highlight-color;
+       border: none;
+       color: $highlight-color;
     }
 }
 
@@ -318,7 +365,7 @@ table {
         height: 180px;
     }
 
-    
+
 }
 
 // Featured image in posts
@@ -329,4 +376,139 @@ table {
 // Active page number in pagination
 .active {
     font-weight: 700;
+}
+
+
+
+/* Menu General Styles */
+.menuBackground {
+	background: Transparent;/* bgcolor whole menu*/
+	text-align: center; /* or change the value to left to align left*/
+}
+.dropDownMenu a {
+	color: $text-color; /* text color whole menu*/
+  font-family: $base-font-family;
+  font-size: 9px;
+  letter-spacing: 0.235em;
+  text-transform: uppercase;
+  font-weight: 400;
+
+}
+.dropDownMenu,
+.dropDownMenu ul {
+	list-style: none;
+	margin: 0px 0px 0px 0px; /* margin fron top, right now exactly lined with Marie*/
+	padding: 0px 0px 0px 0px;
+}
+.dropDownMenu li {
+	position: relative;
+
+}
+.dropDownMenu a {
+	padding: 1px 13px;/* Padding text whole menu so parents and children. 1 is afstand tussen boven en beneden 2 px is afstand van elkaar af*/
+	display: block;
+	text-decoration: none;
+}
+.dropDownMenu a:hover {
+	background: transparent; /* bgcolor hover whole menu*/
+	color: #aaa; /* textcolor hover whole menu*/
+}
+
+
+/* Level 1 Drop Down Menu */
+.dropDownMenu > li {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: -4px; /* solve the 4 pixels spacing between list-items */
+}
+.dropDownMenu > li:first-child {
+	margin-left: 0;
+}
+.dropDownMenu > li > a {}
+.dropDownMenu > li > a:hover {}
+
+
+
+/* Level 2 */
+.dropDownMenu > li > ul {
+	text-align: left;
+	width: 150%; /* change auto value with 200px if you want a bigger menu  Veranderd ook of technical drawings wel voluit geschrevn kan zijn*/
+	display: none;
+	background: #fff; /* bgcolor dropdown lvl2 CHANGE this if it hovers over other text. Should be same as background color of the whole website.*/
+	position: absolute;
+	padding: 0px 0px 0px; /* padding second level from top and left indent*/
+	top: 100%;
+	left: 0;
+	z-index: 100; /* if you have YouTube iframes, is good to have a bigger z-index so the video can appear above the video */
+}
+.dropDownMenu > li:hover > ul {
+	display: block;
+}
+.dropDownMenu ul li a {}
+.dropDownMenu ul li a:hover {}
+
+
+
+/* Level 3 */
+.dropDownMenu > li > ul > li > ul {
+	text-align: left;
+	display: none;
+	background: #fff;/* bgcolor dropdown lvl2 CHANGE this if it hovers over other text. Should be same as background color of the whole website.*/
+	position: absolute;
+	padding: 0px 0px 0px 0px;
+	left: 70%; /* padding second level from left/parent menu*/
+	top: 0px; /* padding second level from top*/
+	z-index: 100;
+}
+.dropDownMenu > li > ul > li:hover > ul {
+	display: block;
+}
+.dropDownMenu ul ul li {}
+.dropDownMenu ul ul li a {}
+.dropDownMenu ul ul li a:hover {}
+
+              /***********CSS Drop down menu ending***********/
+
+
+.thumb {
+    position: relative; /*used to be relative*/
+    height: 100%;
+    display: inline;
+    overflow: auto;
+    border-bottom: 1px dotted $highlight-color;
+}
+.thumb img {
+    width: 100%;
+    padding: 0;
+}
+.thumb > div {
+    background-color: #fff;
+    opacity: 0;
+    position: absolute; /* used to be absolute: the box covered the link text*/
+    overflow: hidden; /* hidden: removes the extra step with all the text vertical*/
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transition: opacity 0.3s linear;
+    text-shadow: #000 0px 0px 0;
+    color: $highlight-color;
+}
+.thumb:hover > div {
+    display: inline;
+    transition: all 0.3s linear;
+    opacity: 1.0;
+    position: relative; /*relative, absolute, relative pushes the content*/
+}
+.thumb > div div {
+    padding: 20px 40px;
+}
+.thumb h2 {
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+.thumb p {
+    margin-bottom: 0px;
 }

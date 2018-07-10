@@ -1,15 +1,18 @@
 ---
-layout: post
+layout: blue
 title: Documentation
 description: Learn how to install and use this theme. This document will be updated on a regular basis upon adding new features or bug fixes5
-img: image-10.jpg
-color: FF6F00
-author: webjeda
+img:
+color: DF722A
+category: Article
+number: No.1
 ---
 
 * some text
 {: toc}
 
+Thats the table of content code! obover: {: toc and it end with another curly bracket!
+6F3DDB
 
 # Installation:
 Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.

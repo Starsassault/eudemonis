@@ -5,21 +5,26 @@
 
 
 // Our variables
-$base-font-family: 'Open Sans', sans-serif;
-$head-font-family: 'Open Sans', sans-serif;
-$base-font-size:   14px;
-$base-font-weight: 300;
+$base-font-family: 'Helvetica neue', sans-serif;
+$head-font-family: 'Helvetica neue', sans-serif; /*Tagline; color in _style.scss*/
+$base-font-size:   13px; /*doesn't do anything*/
+$base-font-weight: 400; /*change in _base.scss*/
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1.5; /*doesn't do anything*/
 $spacing-unit:     10px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #ea6111;
+$text-color:       #303030; /*body text*/
+$background-color: #fdfdfd; /* Change in _base.scss */
+$brand-color:      #ffc8bd; /* Link color*/
 $grey-color:       #828282;
-$highlight-color:  #eae311;
+$highlight-color:  #DA4E3E; /* hovering link color */
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark:  darken($grey-color, 20%);
+$article-color:    #DA4E3E;
+$card-color:       #DA3E65;
+$hypothesis-color: #1C93CA;
+$fourth-color: #DF722A;
+$fiths-color: #6344D5;
 
 // Width of the content area
 $content-width:    900px;
@@ -54,5 +59,3 @@ $on-laptop:        1000px;
         "menu",
         "syntax-highlighting"
 ;
-
-

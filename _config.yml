@@ -1,12 +1,12 @@
 
-title: Karna
+title: Eudemonis
 desctiption: Karna is a responsive jekyll theme which includes pinterest like pins.
 url: http://webjeda.com/
 permalink: ':title/'
 
 markdown: kramdown
-baseurl: "/"
-full-version: "http://webjeda.com/karna-full/"
+baseurl: ""
+full-version: ""
 
 sass:
     style: compressed

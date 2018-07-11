@@ -23,10 +23,10 @@ Nothing exists besides life, everything is created in this set of parameters tha
 ## A will to live
 Many people believe in a certain process that allows us to make decisions. Many people believe that what they've made, is done by them. That there is an I and a You. That there are boundaries to everything. A logical reason for this thinking is the belief that we cannot experience how it is to be a plant, or a star, or a single cell of our own organs. So what are we then? Where and what is this so called consciousness? Is our consciousness the mean of all the kinds of consciousness of our individual cells, or atoms? Is everything just a mean?
 
-This question can be better understood with the question is there <div class="thumb"><a href="{{baseurl}}/free-will">free will</a><div><div>
-{% for post in site.posts %}
-{% if post.title == "Free Will" %}
+This question can be better understood with the question is there <div class="thumb"><a href="{{site.baseurl}}/free-will">free will</a><div><div>{% if post.title == "Free Will" %}
 <h2>{{ post.title }}</h2>
             <p>Ladieda</p>
-            <p>{{ post.description }}</p>{% endif %}{% endfor %}</div></div></div>
-? In the eyes of biologists consciousness is just a product of biology and nothing more. It is not something of itself, its no end product, it has no purpose like anything else but to survival. consciousness was made with the sole reason because it could and it helped its "host" to survive and thrive better than its predecessor.
+            <p>{{ post.description }}{% endif %}{% endfor %}</p></div></div></div>
+? In the eyes of biologists consciousness is just a product of biology and nothing more.
+
+It is not something of itself, its no end product, it has no purpose like anything else but to survival. consciousness was made with the sole reason because it could and it helped its "host" to survive and thrive better than its predecessor.

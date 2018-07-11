@@ -12,7 +12,7 @@ tag:
 number: No.3
 ---
 
-<span class="firstcharacter">T</span>oday we're going to talk about the purpose of life. Does it have a meaning and why are we here are frequent asked questions by the philosophers.
+<span class="firstcharacter">S</span>oday we're going to talk about the purpose of life. Does it have a meaning and why are we here are frequent asked questions by the philosophers.
 
 A lot of times humans are put on top of a hierarchy. But why built a hierarchy in the first place? Why is there a need for a hierarchy? Was it created on purpose by man, or by life? Or did it come into life? Or did it come out of life like everything else.
 

@@ -1,6 +1,6 @@
 ---
 title: Contact
-layout: page
+layout: post
 permalink: /contact/
 ---
 Some rights reserved.
